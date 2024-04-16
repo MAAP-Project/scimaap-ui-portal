@@ -192,6 +192,7 @@ p {
 .footer .nav-secondary ul {
   font-family: "Ropa Sans", sans-serif;
   width: 100%;
+  padding: 0;
 }
 
 .footer .nav-secondary li {
