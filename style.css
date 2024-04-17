@@ -184,8 +184,55 @@ p {
     width: 92px;
 }
 
+.footer .nav-secondary {
+  margin: 32px 0px;
+  text-align: center;
+}
+
+.footer .nav-secondary ul {
+  font-family: "Ropa Sans", sans-serif;
+  width: 100%;
+  padding: 0;
+}
+
+.footer .nav-secondary li {
+  display:inline-block;
+}
+
+.footer .nav-secondary li:not(:last-child)::after {
+  padding: 0px 8px;
+  content: "|";
+  color: #9AA8B6;
+}
+
+.footer .nav-secondary a {
+  color: #61788E;
+  text-align: center;
+ 
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.footer .nav-secondary a:hover {
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 600px) {
-    .links::after {
-        content: none;
-    }
+  .links::after {
+      content: none;
+  }
+
+  .footer .nav-secondary ul {
+    display: inline-flex;
+    flex-direction: column;
+  }
+
+  .footer .nav-secondary li {
+    margin-bottom: 8px;
+  }
+
+  .footer .nav-secondary li:not(:last-child)::after {
+    padding: 0px;
+    content: "";
+  }
 }
