@@ -142,7 +142,7 @@ p {
     top: 50%;
     transform: translate(-50%, -50%);
     width: 1px;
-    height: 81px;
+    height: 75%;
     background-color: #9AA8B6;
 }
 
@@ -157,6 +157,7 @@ p {
     flex-direction: column;
     transition: all 0.2s ease-in-out;
     opacity: 1;
+    align-items: center;
 }
 
 .link-disabled {
@@ -177,11 +178,10 @@ p {
     height: 1px;
     background-color: #9AA8B6;
     transition: all 0.2s ease-in-out;
-
 }
 
 .link:hover span::after {
-    width: 92px;
+    width: 100%;
 }
 
 .footer .nav-secondary {
